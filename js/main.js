@@ -8,12 +8,17 @@ btn.addEventListener("click", () => {
   logo.id = "logo";
   input.id = "ocultar";
   btn.id = "ocultar";
-});
+  let qrcode = new QRCode(document.querySelector(".QR"), {
+    text: input,
+    width: 200, // Ancho del código QR
+    height: 200, // Alto del código QR
+    correctLevel: QRCode.CorrectLevel.H, // Nivel de corrección de errores (L, M, Q, H)
+  });
+  setTimeout(function () {
+    let qrImg = document.querySelector(".QR img");
 
-let qrcode = new QRCode(document.querySelector(".QR"), {
-  text: input,
-  width: 128, // Ancho del código QR
-  height: 128, // Alto del código QR
+    if (qrImg) {
+      qrImg.id = "miClase";
+    }
+  }, 200);
 });
-
-let codigo = document.querySelector(".QR");

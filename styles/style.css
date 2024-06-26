@@ -53,5 +53,15 @@ body {
 .QR {
   display: grid;
   justify-content: center;
+  width: 16%;
   margin-top: 28vh;
+  margin-left: 40%;
+  border-radius: 1000px;
+  padding: 4vh;
+  background-color: #4e80ee33;
+}
+#miClase {
+  background-color: white;
+  padding: 3vh;
+  border-radius: 20px;
 }
