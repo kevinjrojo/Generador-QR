@@ -50,18 +50,23 @@ body {
   margin-top: 0%;
   margin-left: 2%;
 }
+.nav {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
 .QR {
   display: grid;
   justify-content: center;
-  width: 16%;
-  margin-top: 28vh;
-  margin-left: 40%;
+  width: 35vh;
+  place-items: center;
   border-radius: 1000px;
-  padding: 4vh;
-  background-color: #4e80ee33;
+  padding: 3vh;
 }
 #miClase {
   background-color: white;
   padding: 3vh;
   border-radius: 20px;
+  width: 27vh;
+  height: 27vh;
 }
