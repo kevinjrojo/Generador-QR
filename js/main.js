@@ -12,12 +12,6 @@ btn.addEventListener("click", () => {
   logo.id = "logo";
   input.id = "ocultar";
   btn.id = "ocultar";
-  obtenerQr();
-  fondo.style.backgroundColor = "#4e80ee33";
-  crearBotones();
-});
-
-function obtenerQr() {
   url = input.value;
   let qrcode = new QRCode(document.querySelector(".QR"), {
     text: url,
@@ -27,26 +21,40 @@ function obtenerQr() {
   if (qrImg) {
     qrImg.id = "miClase";
   }
-  function descargarqr() {
-    setTimeout(() => {
-      console.log(qrImg.src);
-    }, 100);
-  }
-}
+
+  fondo.style.backgroundColor = "#4e80ee33";
+  crearBotones();
+});
+
+function obtenerQr() {}
 
 function crearBotones() {
-  let botones = document.createElement("div");
-
-  fondo.appendChild(botones);
   let qrImg = document.querySelector(".QR img");
 
+  let botones = document.createElement("div");
+  botones.classList.add("funciones");
+  fondo.appendChild(botones);
   let descargar = document.createElement("a");
-  descargar.href = "#";
-  descargar.download = qrImg.src;
-  descargar.innerText = "descargar";
+  setTimeout(() => {
+    descargar.href = qrImg.src;
+    descargar.download = "qrcode.png";
+  }, 100);
+  descargar.id = "btn2";
+  descargar.innerText = "Download ↓";
   botones.appendChild(descargar);
-  let copiar = document.createElement("button");
+
+  let copiar = document.createElement("a");
   copiar.id = "btn3";
-  copiar.innerText = "copiar";
+  copiar.innerText = "Share 🔗";
+  copiar.addEventListener("click", () => {
+    navigator.clipboard
+      .writeText(qrImg.src)
+      .then(() => {
+        alert("URL copiada al portapapeles");
+      })
+      .catch((err) => {
+        console.error("Error al copiar la URL: ", err);
+      });
+  });
   botones.appendChild(copiar);
 }

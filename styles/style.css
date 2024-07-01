@@ -53,7 +53,7 @@ body {
 .nav {
   display: grid;
   place-items: center;
-  height: 100vh;
+  height: 80vh;
 }
 .QR {
   display: grid;
@@ -69,4 +69,25 @@ body {
   border-radius: 20px;
   width: 27vh;
   height: 27vh;
+}
+.funciones {
+  position: absolute;
+  top: 75%;
+}
+#btn2 {
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #3662e3;
+  color: white;
+  margin: 10vh;
+  text-decoration: none;
+}
+#btn3 {
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 20px;
+  border: none;
+  background-color: #3662e3;
+  color: white;
+  margin: 10vh;
 }
