@@ -1,6 +1,11 @@
 let input = document.querySelector(".input");
 let btn = document.querySelector(".btn1");
 let fondo = document.querySelector(".QR");
+let form = document.querySelector(".formulario");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+});
 
 btn.addEventListener("click", () => {
   let logo = document.querySelector(".qrcode");
@@ -18,19 +23,26 @@ function obtenerQr() {
     text: url,
     correctLevel: QRCode.CorrectLevel.H, // Nivel de corrección de errores (L, M, Q, H)
   });
-
   let qrImg = document.querySelector(".QR img");
   if (qrImg) {
     qrImg.id = "miClase";
+  }
+  function descargarqr() {
+    setTimeout(() => {
+      console.log(qrImg.src);
+    }, 100);
   }
 }
 
 function crearBotones() {
   let botones = document.createElement("div");
+
   fondo.appendChild(botones);
-  url = input.value;
+  let qrImg = document.querySelector(".QR img");
+
   let descargar = document.createElement("a");
-  descargar.href = url;
+  descargar.href = "#";
+  descargar.download = qrImg.src;
   descargar.innerText = "descargar";
   botones.appendChild(descargar);
   let copiar = document.createElement("button");
