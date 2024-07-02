@@ -37,14 +37,14 @@ function crearBotones() {
   let descargar = document.createElement("a");
   setTimeout(() => {
     descargar.href = qrImg.src;
-    descargar.download = "qrcode.png";
+    descargar.download = "qrcode.jpg";
   }, 100);
-  descargar.id = "btn2";
+  descargar.classList.add("btn2");
   descargar.innerText = "Download ↓";
   botones.appendChild(descargar);
 
   let copiar = document.createElement("a");
-  copiar.id = "btn3";
+  copiar.classList.add("btn3");
   copiar.innerText = "Share 🔗";
   copiar.addEventListener("click", () => {
     navigator.clipboard
