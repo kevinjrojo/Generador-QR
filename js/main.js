@@ -12,11 +12,15 @@ btn.addEventListener("click", () => {
   logo.id = "logo";
   input.id = "ocultar";
   btn.id = "ocultar";
-  url = input.value;
-  let qrcode = new QRCode(document.querySelector(".QR"), {
+  let url = input.value;
+
+  fondo.innerHTML = "";
+
+  let qrcode = new QRCode(fondo, {
     text: url,
     correctLevel: QRCode.CorrectLevel.H, // Nivel de corrección de errores (L, M, Q, H)
   });
+
   let qrImg = document.querySelector(".QR img");
   if (qrImg) {
     qrImg.id = "miClase";
@@ -26,14 +30,13 @@ btn.addEventListener("click", () => {
   crearBotones();
 });
 
-function obtenerQr() {}
-
 function crearBotones() {
   let qrImg = document.querySelector(".QR img");
 
   let botones = document.createElement("div");
   botones.classList.add("funciones");
   fondo.appendChild(botones);
+
   let descargar = document.createElement("a");
   setTimeout(() => {
     descargar.href = qrImg.src;

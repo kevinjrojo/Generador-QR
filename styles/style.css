@@ -2,12 +2,11 @@ body {
   background-color: #111729;
   background-image: url("../img/bg-illustration.svg");
   background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: 5vh;
+  background-position: right 5vh;
 }
 .logo {
   padding: 3%;
-  width: 30vh;
+  width: 25vh;
 }
 .qrcode {
   width: 100%;
@@ -17,28 +16,28 @@ body {
 .input {
   z-index: 0;
   position: relative;
-  font-size: 18px;
-  padding-left: 40px;
+  font-size: 1.125rem; /* 18px */
+  padding-left: 2.5rem; /* 40px */
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: #364153;
   width: 50%;
-  padding: 22px;
+  padding: 1.375rem;
   background-color: #070a13;
-  border: 2px #3662e3 solid;
-  border-radius: 20px;
-  left: 50px;
+  border: 0.125rem #3662e3 solid;
+  border-radius: 1.25rem;
+  left: 3.125rem;
 }
 .btn1 {
   position: relative;
-  left: -90px;
+  left: -5.625rem;
   z-index: 1;
   color: aliceblue;
   background-color: #3662e3;
-  border-radius: 16px;
+  border-radius: 1rem;
   border: none;
-  font-size: 18px;
-  width: 130px;
-  padding: 17px;
+  font-size: 1.125rem;
+  width: 8.125rem;
+  padding: 1.0625rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 #ocultar {
@@ -47,7 +46,7 @@ body {
 #logo {
   width: 15vh;
   display: flex;
-  margin-top: 0%;
+  margin-top: 0;
   margin-left: 2%;
 }
 .nav {
@@ -67,9 +66,9 @@ body {
 #miClase {
   background-color: white;
   padding: 3vh;
-  border-radius: 20px;
-  width: 180px;
-  height: 180px;
+  border-radius: 1.25rem;
+  width: 11.25rem;
+  height: 11.25rem;
 }
 .funciones {
   position: absolute;
@@ -77,61 +76,64 @@ body {
 }
 .btn2 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  border-radius: 15px;
-  padding: 20px;
+  border-radius: 0.9375rem;
+  padding: 1.25rem;
   background-color: #3662e3;
   color: white;
-  margin: 40px;
+  margin: 2.5rem;
   text-decoration: none;
 }
 .btn3 {
   text-decoration: none;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   cursor: pointer;
-  border-radius: 15px;
-  padding: 20px;
+  border-radius: 0.9375rem;
+  padding: 1.25rem;
   border: none;
   background-color: #3662e3;
   color: white;
-  margin: 40px;
+  margin: 2.5rem;
 }
 @media (min-width: 300px) and (max-width: 900px) {
   body {
-    background-position-x: 10rem;
-    background-position-y: 2rem;
+    background-position: 20vh 5vh;
   }
 
   .input {
     width: 80%;
     font-size: 1rem;
-    padding-left: 10px;
-    left: 0px;
+    padding-left: 0.625rem;
+    left: 0;
     padding: 1.125rem;
     border-radius: 0.9375rem;
   }
+
   .btn1 {
-    position: relative;
-    top: -3.356rem;
+    top: -3.306rem;
     border-radius: 0.9375rem;
     left: 33.5%;
     width: 5rem;
     font-size: 0.8125rem;
   }
+
   .funciones {
     width: 25rem;
     margin-top: 2.5rem;
   }
+
   .QR {
     margin-top: 15vh;
-    width: 70vw;
+    width: 16rem;
     padding: 2rem;
   }
+
   #miClase {
     padding: 1.5625rem;
     border-radius: 1.25rem;
     width: 80%;
     height: 80%;
   }
+
   .btn2,
   .btn3 {
     border-radius: 0.9375rem;
