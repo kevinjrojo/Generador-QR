@@ -18,14 +18,13 @@ btn.addEventListener("click", () => {
 
   let qrcode = new QRCode(fondo, {
     text: url,
-    correctLevel: QRCode.CorrectLevel.H, // Nivel de corrección de errores (L, M, Q, H)
+    correctLevel: QRCode.CorrectLevel.H,
   });
 
   let qrImg = document.querySelector(".QR img");
   if (qrImg) {
     qrImg.id = "miClase";
   }
-
   fondo.style.backgroundColor = "#4e80ee33";
   crearBotones();
 });

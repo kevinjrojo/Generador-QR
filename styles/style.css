@@ -16,11 +16,11 @@ body {
 .input {
   z-index: 0;
   position: relative;
-  font-size: 1.125rem; /* 18px */
-  padding-left: 2.5rem; /* 40px */
+  font-size: 1.125rem;
+  padding-left: 2.5rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: #364153;
-  width: 50%;
+  width: 40%;
   padding: 1.375rem;
   background-color: #070a13;
   border: 0.125rem #3662e3 solid;
