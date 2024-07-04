@@ -63,7 +63,8 @@ body {
   border-radius: 1000px;
   padding: 3vh;
 }
-#miClase {
+#miId {
+  display: block;
   background-color: white;
   padding: 3vh;
   border-radius: 1.25rem;
@@ -72,7 +73,7 @@ body {
 }
 .funciones {
   position: absolute;
-  top: 73%;
+  top: 80%;
 }
 .btn2 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -124,14 +125,19 @@ body {
   .QR {
     margin-top: 15vh;
     width: 16rem;
-    padding: 2rem;
+    height: 16rem;
+    padding: 0.5rem;
   }
-
-  #miClase {
-    padding: 1.5625rem;
-    border-radius: 1.25rem;
-    width: 80%;
-    height: 80%;
+  canvas {
+    border: 2rem rgb(233, 233, 233) solid;
+    width: 65%;
+    border-radius: 2rem;
+  }
+  #miId {
+    border: 0.3rem white solid;
+    width: 70%;
+    height: 70%;
+    border-radius: 2rem;
   }
 
   .btn2,

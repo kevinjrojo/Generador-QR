@@ -22,9 +22,7 @@ btn.addEventListener("click", () => {
   });
 
   let qrImg = document.querySelector(".QR img");
-  if (qrImg) {
-    qrImg.id = "miClase";
-  }
+  qrImg.id = "miId";
   fondo.style.backgroundColor = "#4e80ee33";
   crearBotones();
 });
