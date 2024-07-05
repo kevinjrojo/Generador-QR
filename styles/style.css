@@ -129,7 +129,7 @@ body {
     padding: 0.5rem;
   }
   canvas {
-    border: 2rem rgb(233, 233, 233) solid;
+    border: 2rem white solid;
     width: 65%;
     border-radius: 2rem;
   }
