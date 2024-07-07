@@ -25,43 +25,10 @@ btn.addEventListener("click", () => {
   qrImg.id = "miId";
   fondo.style.backgroundColor = "#4e80ee33";
   crearBotones();
-  crearBotones2();
 });
 
 function crearBotones() {
   let qrImg = document.querySelector(".QR img");
-
-  let botones = document.createElement("div");
-  botones.classList.add("funciones");
-  fondo.appendChild(botones);
-
-  let descargar = document.createElement("a");
-  setTimeout(() => {
-    descargar.href = qrImg.src;
-    descargar.download = "qrcode.jpg";
-  }, 100);
-  descargar.classList.add("btn2");
-  descargar.innerText = "Download ↓";
-  botones.appendChild(descargar);
-
-  let copiar = document.createElement("a");
-  copiar.classList.add("btn3");
-  copiar.innerText = "Share 🔗";
-  copiar.addEventListener("click", () => {
-    navigator.clipboard
-      .writeText(qrImg.src)
-      .then(() => {
-        alert("URL copiada al portapapeles");
-      })
-      .catch((err) => {
-        console.error("Error al copiar la URL: ", err);
-      });
-  });
-  botones.appendChild(copiar);
-}
-
-function crearBotones2() {
-  let qrImg = document.querySelector(".QR canvas");
 
   let botones = document.createElement("div");
   botones.classList.add("funciones");
