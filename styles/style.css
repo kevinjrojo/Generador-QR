@@ -118,14 +118,15 @@ body {
     font-size: 0.8125rem;
   }
   .funciones {
-    width: 100%;
-    margin-top: 2.5rem;
+    top: 35rem;
   }
   .btn2 {
-    margin: 0vh;
+    padding: 2vh !important;
+    margin-left: 2vh !important;
   }
   .btn3 {
-    margin: 0vh;
+    padding: 2vh !important;
+    margin-left: 2vh !important;
   }
   .QR {
     margin-top: 15vh;
